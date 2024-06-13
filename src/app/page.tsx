@@ -1,6 +1,10 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
+import CheckIcon from "../../public/icons/check.svg";
+import ClockIcon from "../../public/icons/clock.svg";
+import CompassIcon from "../../public/icons/compass.svg";
+import BookIcon from "../../public/icons/book.svg";
 
 export default function Home() {
   return (
@@ -15,6 +19,10 @@ export default function Home() {
           <p className="text-white text-xl">Start Now</p>
         </button>
         <p className="text-[#999999] mt-4">Get your first plan free!</p>
+        <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-56 drop-shadow-lg" />
+        <Image src={ClockIcon} alt="clock icon" className="absolute bottom-56 left-[30rem] drop-shadow-lg" />
+        <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[36rem] drop-shadow-lg" />
+        <Image src={BookIcon} alt="book icon" className="absolute top-48 right-48 drop-shadow-lg" />
       </section>
       {/* Section 2: Features */}
       <section className="flex flex-col bg-[#D9D9D9] w-full p-12 gap-24">
