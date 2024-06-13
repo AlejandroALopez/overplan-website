@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#1A79E5",
+        lightPrimary: "#E7F2FE",
       },
       backgroundImage: {
         "wave-pattern": "url('/img/waveBg.png')",

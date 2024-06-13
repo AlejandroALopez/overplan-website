@@ -25,7 +25,7 @@ export default function Home() {
         <Image src={BookIcon} alt="book icon" className="absolute top-48 right-48 drop-shadow-lg" />
       </section>
       {/* Section 2: Features */}
-      <section className="flex flex-col bg-[#D9D9D9] w-full p-12 gap-24">
+      <section className="flex flex-col bg-lightPrimary w-full p-24 gap-24">
         <div className="flex flex-row justify-between items-center">
           {/* Text Content */}
           <div className="flex flex-col gap-4">
@@ -46,15 +46,15 @@ export default function Home() {
         </div>
       </section>
       {/* Section 3: Use Cases */}
-      <section className="flex flex-col items-center bg-[#F2F2F2] w-full">
+      <section className="flex flex-col items-center bg-white w-full">
         <p className="text-3xl font-semibold text-center mt-12">Designed for Diverse Goals</p>
         <p className="text-2xl text-center font-light my-6">Learn a Skill. Build a Routine. And More.</p>
         {/* Text Animation Placeholder */}
-        <div className="bg-gray-600 w-full h-24 mt-12"/>
+        <div className="bg-gray-600 w-full h-36 my-12"/>
       </section>
       {/* Section 4: Call to Action */}
-      <section className="flex flex-col items-center bg-[#808080] w-full p-12 gap-8">
-        <p className="text-3xl font-medium text-white">Ready to Achieve Your Goals?</p>
+      <section className="flex flex-col items-center bg-primary bg-opacity-80 w-full p-12 gap-8">
+        <p className="text-3xl font-semibold text-white">Ready to Achieve Your Goals?</p>
         <button className="flex items-center justify-center bg-white rounded-2xl px-8 py-3">
           <p className="text-xl">Start Now</p>
         </button>
