@@ -30,18 +30,17 @@ export default function Home() {
           {/* Text Content */}
           <div className="flex flex-col gap-4">
             <p className="text-3xl font-semibold">AI creates the plan...</p>
-            <p className="text-lg font-light">Let AI make the plan for you, tailored to your specific goal and preferences.</p>
+            <p className="text-lg font-light w-[500px]">Let AI make the plan for you, tailored to your specific goal and preferences.</p>
           </div>
-          {/* Image Placeholder */}
-          <div className="bg-gray-500 w-[500px] h-96"/>
+          <Image src="/img/s2Image1.png" alt="s2 image 1" width={600} height={370} />
         </div>
+        <div className="bg-gray-300 h-0.5 w-full my-6 rounded-lg"/>
         <div className="flex flex-row justify-between items-center">
-          {/* Image Placeholder */}
-          <div className="bg-gray-500 w-[500px] h-96"/>
+          <Image src="/img/s2Image2.png" alt="s2 image 2" width={600} height={370} />
           {/* Text Content */}
           <div className="flex flex-col gap-4">
             <p className="text-3xl font-semibold">... so you can focus on progress</p>
-            <p className="text-lg font-light">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
+            <p className="text-lg font-light w-[500px]">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
           </div>
         </div>
       </section>
