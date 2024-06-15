@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <div className="flex flex-row w-full items-center text-center gap-16 py-4 px-8 bg-white">
+        <div className="flex flex-row w-full items-center text-center gap-16 py-16 px-8 bg-black">
         </div>
     );
 }

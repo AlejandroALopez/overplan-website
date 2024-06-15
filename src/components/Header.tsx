@@ -5,7 +5,7 @@ export default function Header() {
         <div className="flex flex-row w-full items-center text-center gap-16 py-4 px-8 bg-white">
             {/* Logo */}
             <Link href="/">
-                <button className="text-2xl font-semibold transition hover:scale-110 duration-300">OverPlan AI</button>
+                <button className="text-3xl font-semibold transition hover:scale-110 duration-300">OverPlan AI</button>
             </Link>
         </div>
     );
