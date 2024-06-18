@@ -1,7 +1,5 @@
 'use client';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import CheckIcon from "../../public/icons/check.svg";
@@ -13,7 +11,6 @@ import UseCasesSection from "./useCasesSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Header />
       {/* Section 1: Presentation */}
       <section className="flex flex-col items-center w-full py-24 bg-wave-pattern bg-cover">
         <motion.p
@@ -124,11 +121,13 @@ export default function Home() {
       {/* Section 4: Call to Action */}
       <section className="flex flex-col items-center bg-white bg-opacity-80 w-full p-12 gap-8">
         <p className="text-3xl font-semibold">Ready to Achieve Your Goals?</p>
-        <button className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3">
+        <button 
+          className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
+          transition hover:scale-110 duration-300"
+        >
           <p className="text-xl text-white">Start Now</p>
         </button>
       </section>
-      <Footer />
     </main>
   );
 }
