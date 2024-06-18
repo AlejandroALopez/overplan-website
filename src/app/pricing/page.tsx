@@ -11,10 +11,14 @@ const planColorMatch: { [key: string]: string } = {
 export default function Pricing() {
     const [isMonthPrice, setIsMonthPrice] = useState<boolean>(false);
 
+    const handleStart = () => {
+        // TODO: Redirect to product
+    }
+
     return (
         <main className="flex min-h-screen flex-col items-center bg-[#F7F7F7]">
             {/* Headlines */}
-            <section className="flex flex-col items-center mt-12 gap-6">
+            <section className="flex flex-col items-center mt-24 gap-6">
                 <p
                     className="text-5xl font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
                 >
@@ -51,7 +55,8 @@ export default function Pricing() {
                 {pricePlans.map((plan) => (
                     <div
                         key={plan.name}
-                        className="flex flex-col items-center bg-white rounded-2xl w-72 h-96 gap-4 drop-shadow-lg"
+                        className="flex flex-col items-center bg-white rounded-2xl w-72 h-96 gap-4 
+                            drop-shadow-lg"
                     >
                         <div className={`w-full h-4 ${planColorMatch[plan.name]} rounded-t-2xl`} />
                         <p className="text-xl font-medium">{plan.name}</p>
@@ -67,6 +72,7 @@ export default function Pricing() {
                         <button
                             className="flex items-center justify-center rounded-2xl mt-auto m-4 py-3 px-14 text-primary
                             transition hover:scale-110 hover:bg-primary hover:text-white duration-300 border-2 border-primary"
+                            onClick={() => handleStart()}
                         >
                             <p className="text-xl">Start for free</p>
                         </button>
