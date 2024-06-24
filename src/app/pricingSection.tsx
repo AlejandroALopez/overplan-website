@@ -20,12 +20,12 @@ export default function PricingSection() {
             {/* Headlines */}
             <div className="flex flex-col items-center mt-24 gap-6">
                 <p
-                    className="text-5xl font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
+                    className="text-4xl md:text-5xl font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
                 >
                     Achieve your goals. Try free.
                 </p>
                 <p
-                    className="text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
+                    className="text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
                 >
                     Explore OverPlan AI. No credit card required.
                 </p>

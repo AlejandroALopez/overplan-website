@@ -135,7 +135,7 @@ export default function Home() {
       <PricingSection />
       {/* Section 5: Call to Action */}
       <section className="flex flex-col items-center bg-bgPrimary bg-opacity-80 w-full py-20 gap-12">
-        <p className="text-4xl font-semibold">Get your perfect plan today!</p>
+        <p className="text-4xl font-semibold text-center">Get your perfect plan today!</p>
         <button
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"
