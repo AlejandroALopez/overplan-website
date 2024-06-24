@@ -82,7 +82,7 @@ export default function PricingSection() {
                         <p className="text-xl font-medium">{plan.name}</p>
                         <div className="flex flex-col items-center my-4 h-12">
                             <p className="text-4xl font-semibold">${isMonthPrice ? plan.priceMonthly : plan.priceYearly}/mo</p>
-                            {plan.note && <p className="text-sm text-[#808080] mt-1">{plan.note}</p>}
+                            {plan.note && <p className="text-sm text-[#808080] mt-1">{isMonthPrice ? "billed monthly" : "billed annually"}</p>}
                         </div>
                         <div className="flex flex-col items-center gap-2 w-full">
                             {plan.benefits.map((benefit) => (
