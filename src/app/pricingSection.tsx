@@ -25,7 +25,7 @@ export default function PricingSection() {
                     Achieve your goals. Try free.
                 </p>
                 <p
-                    className="text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
+                    className="w-10/12 md:w-full text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
                 >
                     Explore OverPlan AI. No credit card required.
                 </p>
