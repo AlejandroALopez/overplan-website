@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         primary: "#1A79E5",
         lightPrimary: "#E7F2FE",
+        bgPrimary: "#F6F7F8"
       },
       backgroundImage: {
         "wave-pattern": "url('/img/waveBg.png')",

@@ -7,6 +7,7 @@ import ClockIcon from "../../public/icons/clock.svg";
 import CompassIcon from "../../public/icons/compass.svg";
 import BookIcon from "../../public/icons/book.svg";
 import UseCasesSection from "./useCasesSection";
+import PricingSection from "./pricingSection";
 
 export default function Home() {
   return (
@@ -85,7 +86,7 @@ export default function Home() {
         </motion.div>
       </section>
       {/* Section 2: Features */}
-      <section className="flex flex-col bg-lightPrimary w-full p-24 gap-24">
+      <section className="flex flex-col bg-bgPrimary w-full p-24 gap-24">
         <motion.div
           className="flex flex-row justify-between items-center flex-wrap"
           initial={{ opacity: 0 }}
@@ -130,9 +131,11 @@ export default function Home() {
       </section>
       {/* Section 3: Use Cases */}
       <UseCasesSection />
-      {/* Section 4: Call to Action */}
-      <section className="flex flex-col items-center bg-white bg-opacity-80 w-full p-12 gap-8">
-        <p className="text-3xl font-semibold">Ready to Achieve Your Goals?</p>
+      {/* Section 4: Pricing */}
+      <PricingSection />
+      {/* Section 5: Call to Action */}
+      <section className="flex flex-col items-center bg-bgPrimary bg-opacity-80 w-full py-20 gap-12">
+        <p className="text-4xl font-semibold">Get your perfect plan today!</p>
         <button
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"

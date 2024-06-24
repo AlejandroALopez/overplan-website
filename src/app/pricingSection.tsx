@@ -8,7 +8,7 @@ const planColorMatch: { [key: string]: string } = {
     'Pro': 'bg-[#1A79E5]'
 }
 
-export default function Pricing() {
+export default function PricingSection() {
     const [isMonthPrice, setIsMonthPrice] = useState<boolean>(false);
 
     const handleStart = () => {
@@ -16,9 +16,9 @@ export default function Pricing() {
     }
 
     return (
-        <main className="flex min-h-screen flex-col items-center bg-[#F7F7F7]">
+        <section className="flex flex-col items-center bg-bgPrimary w-full gap-4">
             {/* Headlines */}
-            <section className="flex flex-col items-center mt-24 gap-6">
+            <div className="flex flex-col items-center mt-24 gap-6">
                 <p
                     className="text-5xl font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
                 >
@@ -29,9 +29,9 @@ export default function Pricing() {
                 >
                     Explore OverPlan AI. No credit card required.
                 </p>
-            </section>
+            </div>
             {/* Buttons */}
-            <section className="flex flex-row items-center justify-center gap-4 my-12">
+            <div className="flex flex-row items-center justify-center gap-4 my-12">
                 <button
                     className={`flex items-center justify-center rounded-2xl px-4 py-2 drop-shadow-lg
                     transition hover:scale-110 duration-300 ${isMonthPrice ? "bg-primary" : "bg-white"}`}
@@ -49,9 +49,9 @@ export default function Pricing() {
                 <div className="flex items-center justify-center h-6 px-2 bg-primary bg-opacity-20 ">
                     <p className="text-primary font-medium">20% off</p>
                 </div>
-            </section>
+            </div>
             {/* Price Options */}
-            <section className="flex flex-row flex-wrap justify-center gap-16 mb-12">
+            <div className="flex flex-row flex-wrap justify-center gap-16 mb-12">
                 {pricePlans.map((plan) => (
                     <div
                         key={plan.name}
@@ -78,7 +78,7 @@ export default function Pricing() {
                         </button>
                     </div>
                 ))}
-            </section>
-        </main>
+            </div>
+        </section>
     )
 }

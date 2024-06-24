@@ -6,7 +6,7 @@ export default function UseCasesSection() {
     const [area, setArea] = useState<string>('Travel');
 
     return (
-        <section className="flex flex-col items-center bg-[#F7F7F7] w-full py-4 gap-4">
+        <section className="flex flex-col items-center bg-bgPrimary w-full py-4 gap-4">
             <p className="text-3xl font-semibold text-center mt-12">Designed for Diverse Goals</p>
             <p className="text-2xl text-center font-light my-6">Learn a Skill. Build a Routine. And More.</p>
             {/* Area Selector */}
