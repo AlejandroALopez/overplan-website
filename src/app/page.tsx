@@ -86,9 +86,9 @@ export default function Home() {
         </motion.div>
       </section>
       {/* Section 2: Features */}
-      <section className="flex flex-col bg-bgPrimary w-full p-24 gap-24">
+      <section className="flex flex-col bg-bgPrimary w-full py-24 px-4 md:px-12 lg:px-24 gap-24">
         <motion.div
-          className="flex flex-row justify-between items-center flex-wrap"
+          className="flex flex-col md:flex-row justify-between items-center gap-4"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -111,7 +111,7 @@ export default function Home() {
         </motion.div>
         <div className="bg-gray-300 h-0.5 w-full my-6 rounded-lg" />
         <motion.div
-          className="flex flex-row justify-between items-center flex-wrap"
+          className="flex flex-col md:flex-row justify-between items-center gap-4"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
