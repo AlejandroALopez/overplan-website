@@ -15,7 +15,7 @@ export default function Home() {
       {/* Section 1: Presentation */}
       <section className="flex flex-col items-center w-full py-24 mt-12 bg-wave-pattern bg-cover">
         <motion.p
-          className="text-5xl font-semibold text-center w-full md:w-[700px] leading-[58px] tracking-tight"
+          className="z-10 text-5xl font-semibold text-center w-full md:w-[700px] leading-[58px] tracking-tight"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0 }}
@@ -24,7 +24,7 @@ export default function Home() {
           Unlock Your Potential With AI-Driven Planning
         </motion.p>
         <motion.p
-          className="text-2xl text-center font-light my-12 w-full md:w-[450px] leading-9"
+          className="z-10 text-2xl text-center font-light my-12 w-full md:w-[450px] leading-9"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -33,7 +33,7 @@ export default function Home() {
           Let AI create a personalized plan to achieve your goals
         </motion.p>
         <motion.button
-          className="flex items-center justify-center bg-primary rounded-2xl px-10 py-4
+          className="z-10 flex items-center justify-center bg-primary rounded-2xl px-10 py-4
             transition hover:scale-110 duration-300"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -43,7 +43,7 @@ export default function Home() {
           <p className="text-white text-2xl">Start Now</p>
         </motion.button>
         <motion.p
-          className="text-[#999999] mt-4 text-lg"
+          className="z-10 text-[#999999] mt-4 text-lg"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
@@ -58,7 +58,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2 }}
           viewport={{ once: true }}
         >
-          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-56 drop-shadow-lg" />
+          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-[15%] opacity-40 md:opacity-100 drop-shadow-lg" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.2 }}
           viewport={{ once: true }}
         >
-          <Image src={ClockIcon} alt="clock icon" className="absolute bottom-56 left-[30rem] drop-shadow-lg" />
+          <Image src={ClockIcon} alt="clock icon" className="hidden md:block absolute bottom-52 left-[25%] opacity-40 md:opacity-100 drop-shadow-lg" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -74,7 +74,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.4 }}
           viewport={{ once: true }}
         >
-          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[36rem] drop-shadow-lg" />
+          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[35%] opacity-40 md:opacity-100 drop-shadow-lg" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -82,7 +82,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.6 }}
           viewport={{ once: true }}
         >
-          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-48 drop-shadow-lg" />
+          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-[10%] opacity-40 md:opacity-100 drop-shadow-lg" />
         </motion.div>
       </section>
       {/* Section 2: Features */}
