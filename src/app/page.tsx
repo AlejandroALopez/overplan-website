@@ -89,15 +89,17 @@ export default function Home() {
       <section className="flex flex-col bg-bgPrimary w-full p-24 gap-24">
         <motion.div
           className="flex flex-row justify-between items-center flex-wrap"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: true }}
         >
           {/* Text Content */}
           <div className="flex flex-col gap-4 w-full md:w-[500px]">
-            <p className="text-4xl font-semibold">AI creates the plan...</p>
-            <p className="text-xl font-light">Let AI make the plan for you, tailored to your specific goal and preferences.</p>
+            <p className="text-4xl font-semibold"> AI creates the plan...</p>
+            <p className="text-xl font-light">
+              Let AI make the plan for you, tailored to your specific goal and preferences.
+            </p>
           </div>
           <Image
             src="/img/s2Image1.png"
@@ -110,16 +112,16 @@ export default function Home() {
         <div className="bg-gray-300 h-0.5 w-full my-6 rounded-lg" />
         <motion.div
           className="flex flex-row justify-between items-center flex-wrap"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: true }}
         >
-          <Image 
-            src="/img/s2Image2.png" 
-            alt="s2 image 2" 
-            width={600 * 1.1} 
-            height={370 * 1.1} 
+          <Image
+            src="/img/s2Image2.png"
+            alt="s2 image 2"
+            width={600 * 1.1}
+            height={370 * 1.1}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {/* Text Content */}
