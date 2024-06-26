@@ -22,7 +22,7 @@ export default function PricingSection() {
             {/* Headlines */}
             <div className="flex flex-col items-center mt-24 gap-6">
                 <motion.p
-                    className="text-4xl md:text-5xl font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
+                    className="text-4xl md:text-5xl text-black font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: defaultAnimDuration, delay: 0.2 }}
@@ -79,14 +79,14 @@ export default function PricingSection() {
                         viewport={{ once: true }}
                     >
                         <div className={`w-full h-4 ${planColorMatch[plan.name]} rounded-t-2xl`} />
-                        <p className="text-xl font-medium">{plan.name}</p>
+                        <p className="text-xl text-black font-medium">{plan.name}</p>
                         <div className="flex flex-col items-center my-4 h-12">
-                            <p className="text-4xl font-semibold">${isMonthPrice ? plan.priceMonthly : plan.priceYearly}/mo</p>
+                            <p className="text-4xl text-black font-semibold">${isMonthPrice ? plan.priceMonthly : plan.priceYearly}/mo</p>
                             {plan.note && <p className="text-sm text-[#808080] mt-1">{isMonthPrice ? "billed monthly" : "billed annually"}</p>}
                         </div>
                         <div className="flex flex-col items-center gap-2 w-full">
                             {plan.benefits.map((benefit) => (
-                                <p key={benefit}>{benefit}</p>
+                                <p key={benefit} className="text-black">{benefit}</p>
                             ))}
                         </div>
                         <button

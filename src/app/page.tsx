@@ -15,7 +15,7 @@ export default function Home() {
       {/* Section 1: Presentation */}
       <section className="flex flex-col items-center w-full py-24 mt-12 bg-wave-pattern bg-cover">
         <motion.p
-          className="z-10 text-5xl font-semibold text-center w-full md:w-[700px] leading-[58px] tracking-tight"
+          className="z-10 text-5xl text-black font-semibold text-center w-full md:w-[700px] leading-[58px] tracking-tight"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0 }}
@@ -24,7 +24,7 @@ export default function Home() {
           Unlock Your Potential With AI-Driven Planning
         </motion.p>
         <motion.p
-          className="z-10 text-2xl text-center font-light my-12 w-full md:w-[450px] leading-9"
+          className="z-10 text-2xl text-black text-center font-light my-12 w-full md:w-[450px] leading-9"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -96,8 +96,8 @@ export default function Home() {
         >
           {/* Text Content */}
           <div className="flex flex-col gap-4 w-full md:w-[500px]">
-            <p className="text-4xl font-semibold"> AI creates the plan...</p>
-            <p className="text-xl font-light">
+            <p className="text-4xl text-black font-semibold"> AI creates the plan...</p>
+            <p className="text-xl text-black font-light">
               Let AI make the plan for you, tailored to your specific goal and preferences.
             </p>
           </div>
@@ -126,8 +126,8 @@ export default function Home() {
           />
           {/* Text Content */}
           <div className="flex flex-col gap-4 w-full md:w-[500px] mt-12 xl:mt-0">
-            <p className="text-4xl font-semibold">... so you can focus on progress</p>
-            <p className="text-xl font-light">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
+            <p className="text-4xl text-black font-semibold">... so you can focus on progress</p>
+            <p className="text-xl text-black font-light">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
           </div>
         </motion.div>
       </section>
@@ -136,8 +136,8 @@ export default function Home() {
       {/* Section 4: Pricing */}
       <PricingSection />
       {/* Section 5: Call to Action */}
-      <section className="flex flex-col items-center bg-bgPrimary bg-opacity-80 w-full py-20 gap-12">
-        <p className="text-4xl font-semibold text-center">Get your perfect plan today!</p>
+      <section className="flex flex-col items-center bg-bgPrimary w-full py-20 gap-12">
+        <p className="text-4xl text-black font-semibold text-center">Get your perfect plan today!</p>
         <button
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"
