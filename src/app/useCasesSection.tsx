@@ -29,7 +29,7 @@ export default function UseCasesSection() {
     return (
         <section className="flex flex-col items-center bg-bgPrimary w-full py-4 gap-4">
             <motion.p
-                className="text-3xl font-semibold text-center mt-12"
+                className="text-3xl text-black font-semibold text-center mt-12"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: defaultAnimDuration, delay: 0.2 }}
@@ -38,7 +38,7 @@ export default function UseCasesSection() {
                 Designed for Diverse Goals
             </motion.p>
             <motion.p
-                className="w-10/12 md:w-full text-2xl text-center font-light my-6"
+                className="w-10/12 md:w-full text-2xl text-black text-center font-light my-6"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: defaultAnimDuration, delay: 0.5 }}
@@ -80,15 +80,15 @@ export default function UseCasesSection() {
                 >
                     {/* Title */}
                     <div className="bg-white p-3 w-full rounded-lg drop-shadow-lg">
-                        <p className="text-2xl font-semibold"><span className="text-primary">{area}</span> Goals</p>
+                        <p className="text-2xl text-black font-semibold"><span className="text-primary">{area}</span> Goals</p>
                     </div>
                     {/* Examples */}
                     <div className="flex flex-col bg-white p-4 w-full h-full gap-4 rounded-lg drop-shadow-lg">
-                        <p>Some examples:</p>
+                        <p className="text-black">Some examples:</p>
                         {useCases[area].possibleGoals.map((example: string) => (
                             <div key={example} className="flex flex-row items-center gap-4">
                                 <div className="p-1 bg-primary rounded-full" />
-                                <p className="font-medium">{example}</p>
+                                <p className="font-medium text-black">{example}</p>
                             </div>
                         ))}
                     </div>
@@ -105,9 +105,9 @@ export default function UseCasesSection() {
                     <p className="text-[#999999]">Short Story</p>
                     <div className="flex flex-row gap-4">
                         <div className="flex flex-col gap-4">
-                            <p className="text-2xl font-semibold">{useCases[area].goal}</p>
-                            <p className="">{useCases[area].situation}</p>
-                            <p className="">{useCases[area].solution}</p>
+                            <p className="text-2xl text-black font-semibold">{useCases[area].goal}</p>
+                            <p className="text-black">{useCases[area].situation}</p>
+                            <p className="text-black">{useCases[area].solution}</p>
                         </div>
                         <div className="relative">
                             <Image
@@ -134,7 +134,7 @@ export default function UseCasesSection() {
                     viewport={{ once: true }}
                     animate={controls}
                 >
-                    <p className="text-2xl font-semibold"><span className="text-primary">{area}</span> Goals</p>
+                    <p className="text-2xl text-black font-semibold"><span className="text-primary">{area}</span> Goals</p>
                 </motion.div>
                 {/* Short Story */}
                 <motion.div
@@ -149,8 +149,8 @@ export default function UseCasesSection() {
                     <div className="flex flex-col items-center gap-4">
                         <div className="flex flex-col gap-4">
                             <p className="text-2xl font-semibold">{useCases[area].goal}</p>
-                            <p className="">{useCases[area].situation}</p>
-                            <p className="">{useCases[area].solution}</p>
+                            <p className="text-black">{useCases[area].situation}</p>
+                            <p className="text-black">{useCases[area].solution}</p>
                         </div>
                         <div className="relative">
                             <Image
@@ -174,11 +174,11 @@ export default function UseCasesSection() {
                     viewport={{ once: true }}
                     animate={controls}
                 >
-                    <p>Some examples:</p>
+                    <p className="text-black">Some examples:</p>
                     {useCases[area].possibleGoals.map((example: string) => (
                         <div key={example} className="flex flex-row items-center gap-4">
                             <div className="p-1 bg-primary rounded-full" />
-                            <p className="font-medium">{example}</p>
+                            <p className="text-black font-medium">{example}</p>
                         </div>
                     ))}
                 </motion.div>
