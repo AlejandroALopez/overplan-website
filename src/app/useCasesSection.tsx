@@ -148,7 +148,7 @@ export default function UseCasesSection() {
                     <p className="text-[#999999]">Short Story</p>
                     <div className="flex flex-col items-center gap-4">
                         <div className="flex flex-col gap-4">
-                            <p className="text-2xl font-semibold">{useCases[area].goal}</p>
+                            <p className="text-2xl text-black font-semibold">{useCases[area].goal}</p>
                             <p className="text-black">{useCases[area].situation}</p>
                             <p className="text-black">{useCases[area].solution}</p>
                         </div>
