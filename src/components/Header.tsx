@@ -9,17 +9,19 @@ export default function Header() {
             </div>
             {/* Sign In and Try Now buttons */}
             <div className="flex flex-row gap-8 items-center">
-                <button
+                <a
+                    href={`${process.env.NEXT_PUBLIC_APP_URL}/auth/login`}
                     className="transition hover:scale-105 duration-300"
                 >
                     <p className="text-black">Sign in</p>
-                </button>
-                <button
+                </a>
+                <a
+                    href={process.env.NEXT_PUBLIC_APP_URL}
                     className="flex items-center justify-center bg-primary rounded-lg px-4 py-2
                     transition hover:scale-105 duration-300"
                 >
                     <p className="text-white">Try Now</p>
-                </button>
+                </a>
             </div>
         </div>
     );

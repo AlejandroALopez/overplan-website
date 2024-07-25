@@ -32,7 +32,8 @@ export default function Home() {
         >
           Let AI create a personalized plan to achieve your goals
         </motion.p>
-        <motion.button
+        <motion.a
+          href={process.env.NEXT_PUBLIC_APP_URL}
           className="z-10 flex items-center justify-center bg-primary rounded-2xl px-10 py-4
             transition hover:scale-110 duration-300"
           initial={{ opacity: 0 }}
@@ -41,7 +42,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <p className="text-white text-2xl">Start Now</p>
-        </motion.button>
+        </motion.a>
         <motion.p
           className="z-10 text-[#999999] mt-4 text-lg"
           initial={{ opacity: 0 }}
@@ -138,12 +139,13 @@ export default function Home() {
       {/* Section 5: Call to Action */}
       <section className="flex flex-col items-center bg-bgPrimary w-full py-20 gap-12">
         <p className="text-4xl text-black font-semibold text-center">Get your perfect plan today!</p>
-        <button
+        <a
+          href={process.env.NEXT_PUBLIC_APP_URL}
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"
         >
           <p className="text-xl text-white">Start Now</p>
-        </button>
+        </a>
       </section>
     </main>
   );
