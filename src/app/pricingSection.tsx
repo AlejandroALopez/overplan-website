@@ -89,13 +89,14 @@ export default function PricingSection() {
                                 <p key={benefit} className="text-black">{benefit}</p>
                             ))}
                         </div>
-                        <button
+                        <a
+                            href={process.env.NEXT_PUBLIC_APP_URL}
                             className="flex items-center justify-center rounded-2xl mt-auto m-4 py-3 px-14 text-primary
                             transition hover:scale-110 hover:bg-primary hover:text-white duration-300 border-2 border-primary"
                             onClick={() => handleStart()}
                         >
                             <p className="text-xl">Start for free</p>
-                        </button>
+                        </a>
                     </motion.div>
                 ))}
             </div>
