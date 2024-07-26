@@ -1,12 +1,16 @@
-import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../public/logo.svg";
 
 export default function Header() {
     return (
         <div className="fixed z-20 flex flex-row w-full items-center justify-between text-center gap-16 py-3 px-6 bg-white">
             {/* Logo */}
-            <div>
-                <p className="text-2xl text-black md:text-3xl font-semibold">OverPlan AI</p>
-            </div>
+            <Image
+                src={Logo}
+                width={260}
+                height={52}
+                sizes="(max-width: 768px) 20vw, (max-width: 1200px) 10vw, 5vw"
+                alt="logo" />
             {/* Sign In and Try Now buttons */}
             <div className="flex flex-row gap-8 items-center">
                 <a
