@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className="flex flex-row w-full justify-between items-center p-12 bg-black">
+        <div className="flex flex-row flex-wrap gap-2 w-full justify-between items-center p-12 bg-black">
             {/* All rights reserved */}
             <div>
                 <p className="text-white text-lg">© 2024 OverPlan AI. All rights reserved.</p>
