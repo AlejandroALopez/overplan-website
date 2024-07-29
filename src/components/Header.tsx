@@ -3,7 +3,7 @@ import Logo from "../../public/logo.svg";
 
 export default function Header() {
     return (
-        <div className="fixed z-20 flex flex-row w-full items-center justify-between text-center gap-16 p-4 bg-white">
+        <div className="fixed z-20 flex flex-row w-full items-center justify-between text-center gap-16 px-4 py-3 bg-white">
             {/* Logo */}
             <div className="relative h-14 w-full max-w-[30vw] lg:max-w-[20vw]">
                 <Image
