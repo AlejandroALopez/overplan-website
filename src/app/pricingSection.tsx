@@ -18,11 +18,11 @@ export default function PricingSection() {
     }
 
     return (
-        <section className="flex flex-col items-center bg-bgPrimary w-full gap-4">
+        <section className="flex flex-col items-center bg-bgPrimary w-full gap-12 px-4">
             {/* Headlines */}
             <div className="flex flex-col items-center mt-24 gap-6">
                 <motion.p
-                    className="text-4xl md:text-5xl text-black font-semibold text-center max-w-[700px] leading-[58px] tracking-tight"
+                    className="text-4xl md:text-5xl text-black font-semibold text-center w-full md:w-[700px]"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: defaultAnimDuration, delay: 0.2 }}
@@ -31,7 +31,7 @@ export default function PricingSection() {
                     Achieve your goals. Try free.
                 </motion.p>
                 <motion.p
-                    className="w-10/12 md:w-full text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
+                    className="w-11/12 md:w-full text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: defaultAnimDuration, delay: 0.4 }}
@@ -42,7 +42,7 @@ export default function PricingSection() {
             </div>
             {/* Buttons */}
             <motion.div
-                className="flex flex-row items-center justify-center gap-4 my-12"
+                className="flex flex-row items-center justify-center gap-4"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: defaultAnimDuration, delay: 0.6 }}
@@ -67,7 +67,7 @@ export default function PricingSection() {
                 </div>
             </motion.div>
             {/* Price Options */}
-            <div className="flex flex-row flex-wrap justify-center gap-16 mb-12">
+            <div className="flex flex-col-reverse md:flex-row justify-center gap-16 mb-12">
                 {pricePlans.map((plan, index) => (
                     <motion.div
                         key={plan.name}

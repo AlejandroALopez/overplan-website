@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Section 1: Presentation */}
-      <section className="flex flex-col items-center w-full py-24 mt-12 bg-wave-pattern bg-cover">
+      <section className="flex flex-col items-center w-full py-24 px-4 mt-12 bg-wave-pattern bg-cover">
         <motion.p
           className="z-10 text-5xl text-black font-semibold text-center w-full md:w-[700px] leading-[58px] tracking-tight"
           initial={{ opacity: 0 }}
@@ -44,7 +44,7 @@ export default function Home() {
           <p className="text-white text-2xl">Start Now</p>
         </motion.a>
         <motion.p
-          className="z-10 text-[#999999] mt-4 text-lg"
+          className="z-10 text-[#999999] mt-4 text-center text-lg"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
@@ -112,7 +112,7 @@ export default function Home() {
         </motion.div>
         <div className="bg-gray-300 h-0.5 w-full my-6 rounded-lg" />
         <motion.div
-          className="flex flex-col md:flex-row justify-between items-center gap-4"
+          className="flex flex-col md:flex-row justify-between items-center gap-4 w-11/12"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
@@ -137,7 +137,7 @@ export default function Home() {
       {/* Section 4: Pricing */}
       <PricingSection />
       {/* Section 5: Call to Action */}
-      <section className="flex flex-col items-center bg-bgPrimary w-full py-20 gap-12">
+      <section className="flex flex-col items-center bg-bgPrimary w-full py-20 px-4 gap-12">
         <p className="text-4xl text-black font-semibold text-center">Get your perfect plan today!</p>
         <a
           href={process.env.NEXT_PUBLIC_APP_URL}
