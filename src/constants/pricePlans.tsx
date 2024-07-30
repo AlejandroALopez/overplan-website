@@ -12,7 +12,7 @@ export const pricePlans: PricePlan[] = [
         priceMonthly: 0,
         priceYearly: 0,
         note: false,
-        benefits: ["1 Free Plan"],
+        benefits: ["2 Free Plans"],
     },
     {
         name: 'Pro',

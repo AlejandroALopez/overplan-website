@@ -25,7 +25,7 @@ export default function Header() {
                     className="flex items-center justify-center bg-primary rounded-lg px-4 py-2
                     transition hover:scale-105 duration-300"
                 >
-                    <p className="text-white">Try Now</p>
+                    <p className="text-white font-medium">Try Now</p>
                 </a>
             </div>
         </div>
