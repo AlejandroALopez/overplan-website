@@ -95,7 +95,7 @@ export default function PricingSection() {
                             transition hover:scale-110 hover:bg-primary hover:text-white duration-300 border-2 border-primary"
                             onClick={() => handleStart()}
                         >
-                            <p className="text-xl">Start for free</p>
+                            <p className="text-xl font-medium">Start for free</p>
                         </a>
                     </motion.div>
                 ))}

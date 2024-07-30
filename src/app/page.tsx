@@ -41,7 +41,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-white text-2xl">Start Now</p>
+          <p className="text-white font-medium text-2xl">Start Now</p>
         </motion.a>
         <motion.p
           className="z-10 text-[#999999] mt-4 text-center text-lg"
@@ -144,7 +144,7 @@ export default function Home() {
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"
         >
-          <p className="text-xl text-white">Start Now</p>
+          <p className="text-xl font-medium text-white">Start Now</p>
         </a>
       </section>
     </main>
