@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import FeatureImg1 from "../../public/img/ssImage1.svg";
+import FeatureImg2 from "../../public/img/ssImage2.svg";
 import CheckIcon from "../../public/icons/check.svg";
 import ClockIcon from "../../public/icons/clock.svg";
 import CompassIcon from "../../public/icons/compass.svg";
@@ -103,7 +105,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src="/img/s2Image1.png"
+            src={FeatureImg1}
             alt="s2 image 1"
             width={600 * 1.1}
             height={370 * 1.1}
@@ -119,7 +121,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <Image
-            src="/img/s2Image2.png"
+            src={FeatureImg2}
             alt="s2 image 2"
             width={600 * 1.1}
             height={370 * 1.1}
