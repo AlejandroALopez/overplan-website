@@ -7,18 +7,50 @@ export default function UseCasesSection() {
     const defaultAnimDuration: number = 0.5;
     const [area, setArea] = useState<string>('Travel');
 
-    const controls = useAnimationControls();
+    const controlsTitle = useAnimationControls();
+    const controlsExamples = useAnimationControls();
+    const controlsStory = useAnimationControls();
 
     // Updates area and triggers animation
     const handleAreaChange = async (newArea: string) => {
         setArea(newArea);
-        await controls.set({
+        
+        // Reset controls
+        controlsTitle.set({
             opacity: 0,
             x: -50,
             y: -50,
-            transition: {delay: 0}
+            transition: { delay: 0 }
         });
-        await controls.start({
+
+        controlsExamples.set({
+            opacity: 0,
+            x: -50,
+            y: 50,
+            transition: { delay: 0 }
+        });
+
+        controlsStory.set({
+            opacity: 0,
+            x: 50,
+            y: 0,
+            transition: { delay: 0 }
+        });
+
+         // Trigger animation
+        controlsTitle.start({
+            opacity: 1,
+            x: 0,
+            y: 0,
+            transition: { duration: defaultAnimDuration, delay: 0 }
+        });
+        controlsExamples.start({
+            opacity: 1,
+            x: 0,
+            y: 0,
+            transition: { duration: defaultAnimDuration, delay: 0 }
+        });
+        controlsStory.start({
             opacity: 1,
             x: 0,
             y: 0,
@@ -70,20 +102,27 @@ export default function UseCasesSection() {
             {/* Content (wide screens) */}
             <div className="hidden lg:flex flex-row justify-evenly mt-8 mb-24 w-full">
                 {/* Right Content: Title and Examples */}
-                <motion.div
-                    className="flex flex-col gap-8 w-3/12"
-                    initial={{ opacity: 0, y: -50, x: -50 }}
-                    whileInView={{ opacity: 1, y: 0, x: 0 }}
-                    transition={{ duration: defaultAnimDuration, delay: 1 }}
-                    viewport={{ once: true }}
-                    animate={controls}
-                >
+                <div className="flex flex-col gap-8 w-3/12">
                     {/* Title */}
-                    <div className="bg-white p-3 w-full rounded-lg drop-shadow-lg">
+                    <motion.div
+                        className="bg-white p-3 w-full rounded-lg drop-shadow-lg"
+                        initial={{ opacity: 0, y: -50, x: -50 }}
+                        whileInView={{ opacity: 1, y: 0, x: 0 }}
+                        transition={{ duration: defaultAnimDuration, delay: 1 }}
+                        viewport={{ once: true }}
+                        animate={controlsTitle}
+                    >
                         <p className="text-2xl text-black font-semibold"><span className="text-primary">{area}</span> Goals</p>
-                    </div>
+                    </motion.div>
                     {/* Examples */}
-                    <div className="flex flex-col bg-white p-4 w-full h-full gap-4 rounded-lg drop-shadow-lg">
+                    <motion.div
+                        className="flex flex-col bg-white p-4 w-full h-full gap-4 rounded-lg drop-shadow-lg"
+                        initial={{ opacity: 0, y: 50, x: -50 }}
+                        whileInView={{ opacity: 1, y: 0, x: 0 }}
+                        transition={{ duration: defaultAnimDuration, delay: 1 }}
+                        viewport={{ once: true }}
+                        animate={controlsExamples}
+                    >
                         <p className="text-black">Some examples:</p>
                         {useCases[area].possibleGoals.map((example: string) => (
                             <div key={example} className="flex flex-row items-center gap-4">
@@ -91,16 +130,16 @@ export default function UseCasesSection() {
                                 <p className="font-medium text-black">{example}</p>
                             </div>
                         ))}
-                    </div>
-                </motion.div>
+                    </motion.div>
+                </div>
                 {/* Left Content: Short Story */}
                 <motion.div
                     className="relative flex flex-col bg-white p-4 w-7/12 gap-4 rounded-lg drop-shadow-lg"
-                    initial={{ opacity: 0, y: -50, x: -50 }}
+                    initial={{ opacity: 0, y: 0, x: 50 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 1 }}
                     viewport={{ once: true }}
-                    animate={controls}
+                    animate={controlsStory}
                 >
                     <p className="text-[#999999]">Short Story</p>
                     <div className="flex flex-row gap-4">
@@ -132,18 +171,18 @@ export default function UseCasesSection() {
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 1 }}
                     viewport={{ once: true }}
-                    animate={controls}
+                    animate={controlsTitle}
                 >
                     <p className="text-2xl text-black font-semibold"><span className="text-primary">{area}</span> Goals</p>
                 </motion.div>
                 {/* Short Story */}
                 <motion.div
                     className="relative flex flex-col bg-white p-4 w-11/12 lg:w-[750px] gap-4 rounded-lg drop-shadow-lg"
-                    initial={{ opacity: 0, y: -50, x: -50 }}
+                    initial={{ opacity: 0, y: 0, x: 50 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 1.2 }}
                     viewport={{ once: true }}
-                    animate={controls}
+                    animate={controlsStory}
                 >
                     <p className="text-[#999999]">Short Story</p>
                     <div className="flex flex-col items-center gap-4">
@@ -168,11 +207,11 @@ export default function UseCasesSection() {
                 {/* Examples */}
                 <motion.div
                     className="flex flex-col bg-white p-4 w-11/12 lg:w-[400px] h-full gap-4 rounded-lg drop-shadow-lg"
-                    initial={{ opacity: 0, y: -50, x: -50 }}
+                    initial={{ opacity: 0, y: 50, x: -50 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 0 }}
                     viewport={{ once: true }}
-                    animate={controls}
+                    animate={controlsExamples}
                 >
                     <p className="text-black">Some examples:</p>
                     {useCases[area].possibleGoals.map((example: string) => (
