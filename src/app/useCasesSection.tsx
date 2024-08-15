@@ -32,8 +32,8 @@ export default function UseCasesSection() {
 
         controlsStory.set({
             opacity: 0,
-            x: 50,
-            y: 0,
+            x: 0,
+            y: 50,
             transition: { delay: 0 }
         });
 
@@ -135,7 +135,7 @@ export default function UseCasesSection() {
                 {/* Left Content: Short Story */}
                 <motion.div
                     className="relative flex flex-col bg-white p-4 w-7/12 gap-4 rounded-lg drop-shadow-lg"
-                    initial={{ opacity: 0, y: 0, x: 50 }}
+                    initial={{ opacity: 0, y: 50, x: 0 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 1 }}
                     viewport={{ once: true }}
@@ -178,7 +178,7 @@ export default function UseCasesSection() {
                 {/* Short Story */}
                 <motion.div
                     className="relative flex flex-col bg-white p-4 w-11/12 lg:w-[750px] gap-4 rounded-lg drop-shadow-lg"
-                    initial={{ opacity: 0, y: 0, x: 50 }}
+                    initial={{ opacity: 0, y: 50, x: 0 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{ duration: defaultAnimDuration, delay: 1.2 }}
                     viewport={{ once: true }}
