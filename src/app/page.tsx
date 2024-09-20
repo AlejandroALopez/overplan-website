@@ -26,7 +26,7 @@ export default function Home() {
           Unlock Your Potential With AI-Driven Planning
         </motion.p>
         <motion.p
-          className="z-10 text-2xl text-black text-center font-light my-12 w-full md:w-[450px] leading-9"
+          className="z-10 text-2xl text-black text-center font-normal my-12 w-full md:w-[450px] leading-9"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -98,9 +98,9 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-4 w-full md:w-[500px]">
+          <div className="flex flex-col gap-6 w-full md:w-[500px]">
             <p className="text-4xl text-black font-semibold"> AI creates the plan...</p>
-            <p className="text-xl text-black font-light">
+            <p className="text-xl text-black font-normal">
               Let AI make the plan for you, tailored to your specific goal and preferences.
             </p>
           </div>
@@ -128,9 +128,9 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {/* Text Content */}
-          <div className="flex flex-col gap-4 w-full md:w-[500px] mt-12 xl:mt-0">
+          <div className="flex flex-col gap-6 w-full md:w-[500px] mt-12 xl:mt-0">
             <p className="text-4xl text-black font-semibold">... so you can focus on progress</p>
-            <p className="text-xl text-black font-light">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
+            <p className="text-xl text-black font-normal">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
           </div>
         </motion.div>
       </section>
