@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import FeatureImg1 from "../../public/img/ssImage1.svg";
-import FeatureImg2 from "../../public/img/ssImage2.svg";
+import FeatureImg1 from "../../public/img/ss1.svg";
+import FeatureImg2 from "../../public/img/ss2.svg";
 import CheckIcon from "../../public/icons/check.svg";
 import ClockIcon from "../../public/icons/clock.svg";
 import CompassIcon from "../../public/icons/compass.svg";
@@ -23,7 +23,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 0 }}
           viewport={{ once: true }}
         >
-          Unlock Your Potential With AI-Driven Planning
+          Achieve More With AI-Driven Planning
         </motion.p>
         <motion.p
           className="z-10 text-2xl text-black text-center font-normal my-12 w-full md:w-[450px] leading-9"
@@ -61,7 +61,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2 }}
           viewport={{ once: true }}
         >
-          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-[15%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-[15%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.2 }}
           viewport={{ once: true }}
         >
-          <Image src={ClockIcon} alt="clock icon" className="hidden md:block absolute bottom-52 left-[25%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={ClockIcon} alt="clock icon" className="hidden md:block absolute bottom-52 left-[25%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -77,7 +77,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.4 }}
           viewport={{ once: true }}
         >
-          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[35%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[35%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -85,7 +85,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.6 }}
           viewport={{ once: true }}
         >
-          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-[10%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-[10%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
       </section>
       {/* Section 2: Features */}
