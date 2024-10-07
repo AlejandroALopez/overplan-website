@@ -58,7 +58,7 @@ export default function PricingSection() {
                             ))}
                         </div>
                         <a
-                            href={process.env.NEXT_PUBLIC_APP_URL}
+                            href={`${process.env.NEXT_PUBLIC_APP_URL}/auth/register`}
                             className="flex items-center justify-center rounded-2xl mt-auto m-4 py-3 px-14 text-primary
                             transition hover:scale-110 hover:bg-primary hover:text-white duration-300 border-2 border-primary"
                         >

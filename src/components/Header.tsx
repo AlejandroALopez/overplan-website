@@ -21,7 +21,7 @@ export default function Header() {
                     <p className="text-black">Sign in</p>
                 </a>
                 <a
-                    href={process.env.NEXT_PUBLIC_APP_URL}
+                    href={`${process.env.NEXT_PUBLIC_APP_URL}/auth/register`}
                     className="flex items-center justify-center bg-primary rounded-lg px-4 py-2
                     transition hover:scale-105 duration-300"
                 >

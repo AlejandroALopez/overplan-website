@@ -35,7 +35,7 @@ export default function Home() {
           Let AI create a personalized plan to achieve your goals
         </motion.p>
         <motion.a
-          href={process.env.NEXT_PUBLIC_APP_URL}
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/auth/register`}
           className="z-10 flex items-center justify-center bg-primary rounded-2xl px-10 py-4
             transition hover:scale-110 duration-300"
           initial={{ opacity: 0 }}
@@ -142,7 +142,7 @@ export default function Home() {
       <section className="flex flex-col items-center bg-bgPrimary w-full py-20 px-4 gap-12">
         <p className="text-4xl text-black font-semibold text-center">Get your perfect plan today!</p>
         <a
-          href={process.env.NEXT_PUBLIC_APP_URL}
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/auth/register`}
           className="flex items-center justify-center bg-primary rounded-2xl px-8 py-3
           transition hover:scale-110 duration-300"
         >
