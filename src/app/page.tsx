@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import FeatureImg1 from "../../public/img/ssImage1.svg";
-import FeatureImg2 from "../../public/img/ssImage2.svg";
+import FeatureImg1 from "../../public/img/ss1.svg";
+import FeatureImg2 from "../../public/img/ss2.svg";
 import CheckIcon from "../../public/icons/check.svg";
 import ClockIcon from "../../public/icons/clock.svg";
 import CompassIcon from "../../public/icons/compass.svg";
@@ -23,10 +23,10 @@ export default function Home() {
           transition={{ duration: 1, delay: 0 }}
           viewport={{ once: true }}
         >
-          Unlock Your Potential With AI-Driven Planning
+          Achieve More With AI-Driven Planning
         </motion.p>
         <motion.p
-          className="z-10 text-2xl text-black text-center font-light my-12 w-full md:w-[450px] leading-9"
+          className="z-10 text-2xl text-black text-center font-normal my-12 w-full md:w-[450px] leading-9"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -61,7 +61,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2 }}
           viewport={{ once: true }}
         >
-          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-[15%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={CheckIcon} alt="check icon" className="absolute bottom-96 left-[15%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.2 }}
           viewport={{ once: true }}
         >
-          <Image src={ClockIcon} alt="clock icon" className="hidden md:block absolute bottom-52 left-[25%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={ClockIcon} alt="clock icon" className="hidden md:block absolute bottom-52 left-[25%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -77,7 +77,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.4 }}
           viewport={{ once: true }}
         >
-          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[35%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={CompassIcon} alt="compass icon" className="absolute top-20 right-[35%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -85,7 +85,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 2.6 }}
           viewport={{ once: true }}
         >
-          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-[10%] opacity-40 md:opacity-100 drop-shadow-lg" />
+          <Image src={BookIcon} alt="book icon" className="absolute top-48 right-[10%] opacity-40 md:opacity-100 drop-shadow-md" />
         </motion.div>
       </section>
       {/* Section 2: Features */}
@@ -98,9 +98,9 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-4 w-full md:w-[500px]">
+          <div className="flex flex-col gap-6 w-full md:w-[500px]">
             <p className="text-4xl text-black font-semibold"> AI creates the plan...</p>
-            <p className="text-xl text-black font-light">
+            <p className="text-xl text-black font-normal">
               Let AI make the plan for you, tailored to your specific goal and preferences.
             </p>
           </div>
@@ -128,9 +128,9 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {/* Text Content */}
-          <div className="flex flex-col gap-4 w-full md:w-[500px] mt-12 xl:mt-0">
+          <div className="flex flex-col gap-6 w-full md:w-[500px] mt-12 xl:mt-0">
             <p className="text-4xl text-black font-semibold">... so you can focus on progress</p>
-            <p className="text-xl text-black font-light">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
+            <p className="text-xl text-black font-normal">Visualize your weekly tasks on a Kanban Board, making it easy to track progress.</p>
           </div>
         </motion.div>
       </section>

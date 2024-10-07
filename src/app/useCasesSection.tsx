@@ -70,7 +70,7 @@ export default function UseCasesSection() {
                 Designed for Diverse Goals
             </motion.p>
             <motion.p
-                className="w-10/12 md:w-full text-2xl text-black text-center font-light my-6"
+                className="w-10/12 md:w-full text-2xl text-black text-center font-normal my-6"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: defaultAnimDuration, delay: 0.5 }}

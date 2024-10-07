@@ -25,7 +25,7 @@ export default function PricingSection() {
                     Achieve your goals. Try free.
                 </motion.p>
                 <motion.p
-                    className="w-11/12 md:w-full text-lg md:text-xl text-[#666666] text-center font-light max-w-[450px] leading-9"
+                    className="w-11/12 md:w-full text-lg md:text-xl text-[#666666] text-center font-normal max-w-[450px] leading-9"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: defaultAnimDuration, delay: 0.4 }}
